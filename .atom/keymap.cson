@@ -37,6 +37,8 @@
   'ctrl-shift-tab ^ctrl': 'unset!'
   'ctrl-shift-tab': 'pane:show-previous-item'
   'cmd-}': 'unset!'
+  'ctrl-`': 'window:focus-next-pane'
+  'ctrl-shift-`': 'window:focus-previous-pane'
 
 'atom-workspace atom-text-editor:not([mini])':
   'shift-enter': 'editor:newline-below'
