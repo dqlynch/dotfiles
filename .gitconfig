@@ -1,0 +1,28 @@
+[user]
+	name = Dylan Lynch
+	email = dqlynch@umich.edu
+
+[color]
+	ui = auto
+
+[color "status"]
+  added = green
+  branch = white bold ul
+  changed = 9    # Bright red
+  unmerged = 11  # Bright yellow
+  untracked = 32 # Brighter blue
+
+[alias]
+	c = checkout
+	b = branch
+	bv = branch -vv
+	amend = commit --amend
+	s = status
+	ls = ls-files
+	logs = log --stat
+	d = diff
+	dn = diff --stat
+	upstream = branch -u
+	g = grep -n --color --break --heading
+	hist = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%an]\" --decorate --graph --date=short --all
+	type = cat-file -t
