@@ -42,4 +42,5 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'shift-enter': 'editor:newline-below'
-  'cmd-enter': 'unset!'
+  'cmd-up': 'editor:move-line-up'
+  'cmd-down': 'editor:move-line-down'
