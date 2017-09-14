@@ -44,3 +44,6 @@
   'shift-enter': 'editor:newline-below'
   'cmd-up': 'editor:move-line-up'
   'cmd-down': 'editor:move-line-down'
+
+'.platform-darwin atom-text-editor':
+  'cmd-shift-L': 'grammar-selector:show'
