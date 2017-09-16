@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/user/School/Random Code/1_mult_of_3_and_5'
+let g:netrw_dirhist_2='/Users/user/School/Random Code'
+let g:netrw_dirhist_3='/Users/user/School'
+let g:netrw_dirhist_4='/Users/user'
+let g:netrw_dirhist_5='/Users'
+let g:netrw_dirhist_6='/'
+let g:netrw_dirhist_7='/Users/user/.vim'

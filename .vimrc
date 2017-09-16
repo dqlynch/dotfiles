@@ -5,7 +5,9 @@ set showcmd
 let mapleader = "\<Space>"
 
 filetype plugin indent on
-syntax on
+syntax enable
+set background=light
+colorscheme solarized
 set encoding=utf-8
 
 " whitespace
