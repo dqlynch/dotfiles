@@ -19,6 +19,9 @@ set softtabstop=2
 set expandtab
 set shiftwidth=2
 
+" want 4 spaces for python files
+autocmd Filetype python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
 " trim trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
