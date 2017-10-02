@@ -1,7 +1,7 @@
 alias tars='tar -xvzf'
 alias c='clear'
 alias ..='cd ..'
-alias la='ls -lha'
+alias la='ls -FGlAhp'
 alias pyenv='python3 -m venv env && source env/bin/activate'
 alias pyserv='python3 -m http.server'
 alias sshcaenoff='ssh dqlynch@login-course-2fa.engin.umich.edu'
