@@ -19,7 +19,7 @@
 	amend = commit --amend
 	s = status
 	ls = ls-files
-	logs = log --stat
+  logs = log --stat --date=local
 	d = diff
 	dn = diff --stat
 	upstream = branch -u
