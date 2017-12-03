@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/user/School/Random Code/1_mult_of_3_and_5'
 let g:netrw_dirhist_2='/Users/user/School/Random Code'
 let g:netrw_dirhist_3='/Users/user/School'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users'
 let g:netrw_dirhist_6='/'
 let g:netrw_dirhist_7='/Users/user/.vim'
 let g:netrw_dirhist_8='/Users/user/git/485-2/insta485'
+let g:netrw_dirhist_9='/Users/user/git/p5_ahrdy/index/hadoop/output'
