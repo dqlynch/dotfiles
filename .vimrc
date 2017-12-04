@@ -1,3 +1,10 @@
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'flazz/vim-colorschemes'
+
+call plug#end()
+
 " Basics
 set number
 set showcmd
@@ -11,7 +18,9 @@ syntax enable
 set encoding=utf-8
 
 set background=dark
-colorscheme solarized
+"colorscheme seattle
+colorscheme obsidian
+set t_Co=256
 
 set colorcolumn=80
 set hlsearch
