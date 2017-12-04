@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'flazz/vim-colorschemes'
+Plug 'felixhummel/setcolors.vim'
 
 call plug#end()
 
@@ -18,8 +19,10 @@ syntax enable
 set encoding=utf-8
 
 set background=dark
-"colorscheme seattle
-colorscheme obsidian
+colorscheme onedark
+" colorscheme apprentice
+" colorscheme devbox?
+" colorscheme desertEx?
 set t_Co=256
 
 set colorcolumn=80
@@ -61,3 +64,5 @@ inoremap <expr> )   strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : "
 inoremap [      []<Left>
 inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 
+" Find and replace
+nnoremap <Leader>s :%s/<C-r><C-w>//gc<Left><Left><Left>
