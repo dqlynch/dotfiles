@@ -1,5 +1,19 @@
 #!/bin/bash
-tmux new-session -s "dev" -d
-tmux split-window -h
-tmux resize-pane -R 50
-tmux -2 attach -d
+if [ "$#" -eq 0 ]
+then
+  NAME="dev"
+else
+  NAME="$@"
+fi
+
+EXISTS=$(tmux has -t="$NAME")
+
+if [ "$?" -ne 0 ]
+then
+  tmux new-session -s "$NAME" -d
+  tmux split-window -h
+  tmux resize-pane -R 50
+  tmux -2 attach -d
+else
+  tmux attach -t "$NAME"
+fi
