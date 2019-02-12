@@ -1,4 +1,6 @@
 " Plugins
+execute pathogen#infect()
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'flazz/vim-colorschemes'
@@ -39,10 +41,24 @@ set splitbelow
 set splitright
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 nnoremap <C-=> <C-W>=
 nnoremap <C-W> <C-W><C-W>
+
+" Resize
+nnoremap <C-H> :vertical res -5<CR>
+nnoremap <C-L> :vertical res +5<CR>
+
+" Copying
+nnoremap <C-C> :%w !pbcopy<CR><CR>
+vnoremap <C-C> :%w !pbcopy<CR><CR>
+
+set pastetoggle=<F12>
+
+" nerdtree
+nnoremap <C-_> :NERDTree<CR>
+let g:NERDTreeQuitOnOpen = 1
 
 " want 4 spaces for python files
 autocmd Filetype python setlocal tabstop=4 shiftwidth=4 softtabstop=4
