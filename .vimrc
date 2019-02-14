@@ -18,8 +18,6 @@ autocmd VimEnter *
 "-----------------------------------------
 
 " Plugins
-execute pathogen#infect()
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'flazz/vim-colorschemes'
