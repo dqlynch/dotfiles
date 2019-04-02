@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/tslime.vim"]
 	path = .vim/bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
+[submodule ".zprezto"]
+	path = .zprezto
+	url = https://github.com/sorin-ionescu/prezto.git
