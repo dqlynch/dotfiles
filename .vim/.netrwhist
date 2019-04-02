@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/user/.ncmpcpp'
 let g:netrw_dirhist_2='/Users/user/482'
 let g:netrw_dirhist_3='/Users/user/School/Random Code/388/p2'
 let g:netrw_dirhist_4='/Users/user/School/eecs489/p2-dqlynch-jdthoma/DNS_sample_txt'
+let g:netrw_dirhist_5='/Users/user/git/dqlynch.github.io/_site/assets'
+let g:netrw_dirhist_6='/Users/user/git/dqlynch.github.io/_site/assets/css'

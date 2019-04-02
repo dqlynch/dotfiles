@@ -17,6 +17,8 @@ autocmd VimEnter *
       \| endif
 "-----------------------------------------
 
+execute pathogen#infect()
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 
@@ -81,7 +83,16 @@ let g:NERDTreeQuitOnOpen = 1
 autocmd Filetype python setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " trim trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
+fun! StripTrailingWhitespace()
+    " Don't strip on these filetypes
+    if &ft =~ 'vim'
+        return
+    endif
+    %s/\s\+$//e
+endfun
+
+autocmd BufWritePre * call StripTrailingWhitespace()
+
 
 " bracket matching stuff
 inoremap {      {}<Left>
@@ -91,12 +102,44 @@ inoremap {{     {
 inoremap {}     {}
 
 inoremap (      ()<Left>
+" deal with python tabbing for expanded fn args
+autocmd Filetype python inoremap (<CR>  (<CR><BS><BS>)<Esc>O<BS>
 inoremap ((     (
 inoremap (<BS>  <Space><BS>
 inoremap <expr> )   strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 
 inoremap [      []<Left>
+inoremap [<BS>  <Space><BS>
+inoremap [[     [
 inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
+
+inoremap "      ""<Left>
+inoremap "<BS>  <Space><BS>
+inoremap ""     "
+inoremap """     """"""<Left><Left><Left>
+inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
+
+inoremap '      ''<Left>
+inoremap '<BS>  <Space><BS>
+inoremap ''     '
+inoremap '''     ''''''<Left><Left><Left>
+inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
+
+
+" Paren surround
+vnoremap (      c()<Esc>P
 
 " Find and replace
 nnoremap <Leader>s :%s/<C-r><C-w>//gc<Left><Left><Left>
+
+" format comments
+set formatoptions+=cro
+
+" New shit from talk
+set path+=**
+set wildmenu
+
+" tslime stuff
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
+nnoremap <Leader>w :w\|:call SendToTmux("!!\n\n")<CR>
