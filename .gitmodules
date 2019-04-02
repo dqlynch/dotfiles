@@ -1,9 +1,24 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+  ignore = dirty
 [submodule ".vim/bundle/tslime.vim"]
 	path = .vim/bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
+  ignore = dirty
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
+  ignore = dirty
+[submodule ".vim/plugged/parsec.vim"]
+	path = .vim/plugged/parsec.vim
+	url = https://github.com/keith/parsec.vim
+  ignore = dirty
+[submodule ".vim/plugged/setcolors.vim"]
+	path = .vim/plugged/setcolors.vim
+	url = https://github.com/felixhummel/setcolors.vim
+  ignore = dirty
+[submodule ".vim/plugged/vim-colorschemes"]
+	path = .vim/plugged/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes
+  ignore = dirty
