@@ -13,7 +13,7 @@ syntax enable
 set encoding=utf-8
 
 set background=dark
-" colorscheme onedark
+colorscheme onedark
 " colorscheme apprentice
 " colorscheme devbox?
 " colorscheme desertEx?
