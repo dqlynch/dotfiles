@@ -119,3 +119,6 @@ set wildmenu
 let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 nnoremap <Leader>w :w\|:call SendToTmux("!!\n\n")<CR>
+
+" lightline config
+set laststatus=2
