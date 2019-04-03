@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/onedark"]
 	path = .vim/bundle/onedark
 	url = https://github.com/joshdick/onedark.vim
+[submodule ".vim/bundle/vim-polyglot"]
+	path = .vim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git

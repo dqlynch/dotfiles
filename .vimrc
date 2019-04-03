@@ -75,11 +75,14 @@ inoremap {{     {
 inoremap {}     {}
 
 inoremap (      ()<Left>
-" deal with python tabbing for expanded fn args
-autocmd Filetype python inoremap (<CR>  (<CR><BS><BS>)<Esc>O<BS>
 inoremap ((     (
 inoremap (<BS>  <Space><BS>
 inoremap <expr> )   strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+" deal with python tabbing for expanded fn args **polyglot makes this obsolete
+"autocmd Filetype python inoremap (<CR>  (<CR><BS><BS>)<Esc>O<BS>
+" polyglot version
+autocmd Filetype python inoremap (<CR>  (<CR>)<Esc>O
+
 
 inoremap [      []<Left>
 inoremap [<BS>  <Space><BS>
