@@ -27,6 +27,7 @@
 	hist = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%an]\" --decorate --graph --date=short --all
 	type = cat-file -t
   lc = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+  boot = submodule update --init
 [push]
 	default = simple
 [core]
