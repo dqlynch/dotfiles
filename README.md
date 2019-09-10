@@ -12,3 +12,6 @@ source ~/.bash_profile
 for zsh: `chsh -s /bin/zsh`
 
 may need to restart
+
+zprezto currently broken lol:
+`rm -rf ~/.z*` and then follow https://github.com/sorin-ionescu/prezto to reinstall
