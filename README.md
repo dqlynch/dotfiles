@@ -8,3 +8,7 @@ git pull origin master
 git boot
 source ~/.bash_profile
 ```
+
+for zsh: `chsh -s /bin/zsh`
+
+may need to restart
