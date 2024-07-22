@@ -1,9 +1,11 @@
 # dotfiles
 
 from scratch:
+
+set up ssh keys, and then:
 ```
 cd ~ && git init .
-git remote add origin https://github.com/dqlynch/dotfiles.git
+git remote add origin git@github.com:dqlynch/dotfiles.git
 git pull origin master
 git boot
 source ~/.bash_profile
