@@ -31,4 +31,4 @@
 [push]
 	default = simple
 [core]
-	excludesfile = ~/.cvsignore
+	excludesfile = /Users/user/.gitignore_global
