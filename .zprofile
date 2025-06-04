@@ -1,1 +1,1 @@
-/Users/user/.zprezto/runcoms/zprofile
+/Users/dylan.lynch/.zprezto/runcoms/zprofile

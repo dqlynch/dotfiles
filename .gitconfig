@@ -1,6 +1,6 @@
 [user]
 	name = Dylan Lynch
-	email = dqlynch@umich.edu
+	email = dylan.lynch@kraken.tech
 
 [color]
 	ui = auto
@@ -14,21 +14,38 @@
 
 [alias]
 	c = checkout
+    coi = !git branch | fzf --height=30% --reverse | xargs git switch
+    sw = switch
 	b = branch
 	bv = branch -vv
+	trim = !git branch --merged master | grep -v "master" | xargs -n 1 -r git branch -d
 	amend = commit --amend
 	s = status
 	ls = ls-files
-  logs = log --stat --date=local
+    logs = log --stat --date=local
 	d = diff
 	dn = diff --stat
+    dom = diff origin/master
 	upstream = branch -u
 	g = grep -n --color --break --heading
+    gm = "!git grep -n --color --break --heading \"$1\" -- ':!*/migrations/*' #"
 	hist = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%an]\" --decorate --graph --date=short --all
 	type = cat-file -t
-  lc = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
-  boot = submodule update --init
+    pom = pull origin master --rebase
+    pu = push -u
+    pnv = push --no-verify
+    lc = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+    boot = submodule update --init
+    wip = commit --message='TMP: [skip ci]' --allow-empty --no-verify
+    r = rebase
+    rc = rebase --continue
+    ri = rebase -i
+    rim = rebase -i origin/master
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/user/.gitignore_global
+	excludesfile = /Users/dylan.lynch/.gitignore_global
+[url "ssh://git@github.com/octoenergy/"]
+	insteadof = https://github.com/octoenergy/
+[fetch]
+	prune = true
