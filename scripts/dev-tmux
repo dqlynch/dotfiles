@@ -6,7 +6,7 @@ else
   NAME="$@"
 fi
 
-EXISTS=$(tmux has -t="$NAME")
+$(tmux has -t="$NAME")
 
 if [ "$?" -ne 0 ]
 then

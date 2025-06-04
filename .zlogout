@@ -1,1 +1,1 @@
-/Users/user/.zprezto/runcoms/zlogout
+/Users/dylan.lynch/.zprezto/runcoms/zlogout
