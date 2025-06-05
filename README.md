@@ -13,5 +13,7 @@ for zsh: `chsh -s /bin/zsh`
 
 may need to restart
 
-zprezto currently broken lol:
+zprezto currently broken...:
 `rm -rf ~/.z*` and then follow https://github.com/sorin-ionescu/prezto to reinstall
+
+`mv ~/runcoms ~/.zprezto/runcoms`
